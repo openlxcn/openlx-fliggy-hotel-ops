@@ -1,0 +1,200 @@
+TAP version 13
+# (node:2800276) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all prices are exact and no trial or voucher package can create order
+ok 1 - all prices are exact and no trial or voucher package can create order
+  ---
+  duration_ms: 102.611491
+  type: 'test'
+  ...
+# Subtest: calendar months clamp correctly at month end
+ok 2 - calendar months clamp correctly at month end
+  ---
+  duration_ms: 0.257789
+  type: 'test'
+  ...
+# Subtest: payment exact amount, merchant method, idempotency and renewal preserve entitlement
+ok 3 - payment exact amount, merchant method, idempotency and renewal preserve entitlement
+  ---
+  duration_ms: 64.386419
+  type: 'test'
+  ...
+# Subtest: service ticket is not delivered and annual persona requires annual plan
+ok 4 - service ticket is not delivered and annual persona requires annual plan
+  ---
+  duration_ms: 79.576947
+  type: 'test'
+  ...
+# Subtest: HTTP website isolates session, requires CSRF and exposes no test-payment bypass
+ok 5 - HTTP website isolates session, requires CSRF and exposes no test-payment bypass
+  ---
+  duration_ms: 219.1267
+  type: 'test'
+  ...
+# Subtest: registered device refresh is revocable and concurrent writers cannot both hold a lease
+ok 6 - registered device refresh is revocable and concurrent writers cannot both hold a lease
+  ---
+  duration_ms: 92.434108
+  type: 'test'
+  ...
+# Subtest: series overview is session protected and rejects mismatched central user identity
+ok 7 - series overview is session protected and rejects mismatched central user identity
+  ---
+  duration_ms: 204.648203
+  type: 'test'
+  ...
+# (node:2800277) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: calendar plans use full identity and reject duplicate or missing price types
+ok 8 - calendar plans use full identity and reject duplicate or missing price types
+  ---
+  duration_ms: 3.838559
+  type: 'test'
+  ...
+# Subtest: supply price cannot fulfill a retail request or overwrite another seller/rate plan
+ok 9 - supply price cannot fulfill a retail request or overwrite another seller/rate plan
+  ---
+  duration_ms: 1.873635
+  type: 'test'
+  ...
+# Subtest: price limits include cumulative changes, stale reads, valid numeric bounds and automatic entitlement
+ok 10 - price limits include cumulative changes, stale reads, valid numeric bounds and automatic entitlement
+  ---
+  duration_ms: 0.871711
+  type: 'test'
+  ...
+# Subtest: a historical actual settlement cannot stand in for a candidate price contribution
+ok 11 - a historical actual settlement cannot stand in for a candidate price contribution
+  ---
+  duration_ms: 0.748248
+  type: 'test'
+  ...
+# Subtest: two-night packages preserve unreserved obligations and partial refunds
+ok 12 - two-night packages preserve unreserved obligations and partial refunds
+  ---
+  duration_ms: 0.519013
+  type: 'test'
+  ...
+# Subtest: net settlement never double counts commission and credits stay valid without prepayment
+ok 13 - net settlement never double counts commission and credits stay valid without prepayment
+  ---
+  duration_ms: 0.945891
+  type: 'test'
+  ...
+# Subtest: five stars containing a complaint are never classified for automatic reply
+ok 14 - five stars containing a complaint are never classified for automatic reply
+  ---
+  duration_ms: 1.169111
+  type: 'test'
+  ...
+# Subtest: free report includes package/settlement risks and paid report only removes promotion
+ok 15 - free report includes package/settlement risks and paid report only removes promotion
+  ---
+  duration_ms: 7.648894
+  type: 'test'
+  ...
+# Subtest: generic order writes and uncertain inventory capacity cannot create eligible actions
+ok 16 - generic order writes and uncertain inventory capacity cannot create eligible actions
+  ---
+  duration_ms: 1.057122
+  type: 'test'
+  ...
+# Subtest: import cannot promote user supplied LIVE labels into executable browser evidence
+ok 17 - import cannot promote user supplied LIVE labels into executable browser evidence
+  ---
+  duration_ms: 57.792145
+  type: 'test'
+  ...
+# Subtest: approved export action still cannot write without LIVE source and real mapping
+ok 18 - approved export action still cannot write without LIVE source and real mapping
+  ---
+  duration_ms: 62.333979
+  type: 'test'
+  ...
+# (node:2800283) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: signed device enrollment rejects swapping another valid token
+ok 19 - signed device enrollment rejects swapping another valid token
+  ---
+  duration_ms: 1.740979
+  type: 'test'
+  ...
+# Subtest: heartbeat and explicit assertion share one renewal and cannot mask its failure
+ok 20 - heartbeat and explicit assertion share one renewal and cannot mask its failure
+  ---
+  duration_ms: 1.199078
+  type: 'test'
+  ...
+# Subtest: a renewal response for another hotel invalidates the lease before the caller can write
+ok 21 - a renewal response for another hotel invalidates the lease before the caller can write
+  ---
+  duration_ms: 2.02541
+  type: 'test'
+  ...
+# (node:2800298) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: central pass scopes user, product and centrally attested property binding
+ok 22 - central pass scopes user, product and centrally attested property binding
+  ---
+  duration_ms: 6.073158
+  type: 'test'
+  ...
+# Subtest: forged, stale, revoked, future or unbounded membership grants fail closed
+ok 23 - forged, stale, revoked, future or unbounded membership grants fail closed
+  ---
+  duration_ms: 5.180678
+  type: 'test'
+  ...
+# Subtest: signed shared pass is consumed by normal license issuance without creating a purchase
+ok 24 - signed shared pass is consumed by normal license issuance without creating a purchase
+  ---
+  duration_ms: 90.936652
+  type: 'test'
+  ...
+# Subtest: a central signed revocation takes effect and an earlier signed active grant cannot revive it
+ok 25 - a central signed revocation takes effect and an earlier signed active grant cannot revive it
+  ---
+  duration_ms: 56.763679
+  type: 'test'
+  ...
+# (node:2800305) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: series signing rejects wrong product, changed body and expired request
+ok 26 - series signing rejects wrong product, changed body and expired request
+  ---
+  duration_ms: 3.508546
+  type: 'test'
+  ...
+# Subtest: transactional outbox retains committed payment and excludes tokens and private ticket content
+ok 27 - transactional outbox retains committed payment and excludes tokens and private ticket content
+  ---
+  duration_ms: 153.389629
+  type: 'test'
+  ...
+# Subtest: uncertain network result replays exact durable batch, then catches later edits and deletions
+ok 28 - uncertain network result replays exact durable batch, then catches later edits and deletions
+  ---
+  duration_ms: 143.554877
+  type: 'test'
+  ...
+# Subtest: series validation rejects leaked credentials, foreign product and invalid money
+ok 29 - series validation rejects leaked credentials, foreign product and invalid money
+  ---
+  duration_ms: 0.537415
+  type: 'test'
+  ...
+# Subtest: a delayed duplicate acknowledgement cannot rewind a newer producer acknowledgement
+ok 30 - a delayed duplicate acknowledgement cannot rewind a newer producer acknowledgement
+  ---
+  duration_ms: 118.805086
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1083.184878

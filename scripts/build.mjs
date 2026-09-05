@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import {catalog,renderReport} from '../skills/openlx-fliggy-hotel-ops/scripts/core.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),skill=path.join(root,'skills/openlx-fliggy-hotel-ops'),downloads=path.join(root,'public/downloads');
+if(!fs.existsSync(path.join(skill,'assets/license-public.txt')))throw Error('LICENSE_PUBLIC_KEY_REQUIRED');
+fs.mkdirSync(downloads,{recursive:true});
+const name=`openlx-fliggy-hotel-ops-${catalog.version}.zip`,dest=path.join(downloads,name);
+const files=[];function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['node_modules','runtime','profiles','.git','data'].includes(e.name))continue;const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(!e.name.endsWith('.pem')&&!e.name.endsWith('.sqlite')&&!e.name.startsWith('.env'))files.push(path.relative(path.dirname(skill),p));}}
+walk(skill);files.sort();
+if(fs.existsSync(dest))fs.unlinkSync(dest);
+const zip=spawnSync('python3',['-c','import zipfile,sys,json,os; names=json.loads(sys.stdin.read()); z=zipfile.ZipFile(sys.argv[1],"w",zipfile.ZIP_DEFLATED); [z.write(n,n) for n in names]; z.close()',dest],{cwd:path.dirname(skill),input:JSON.stringify(files),encoding:'utf8'});if(zip.status!==0)throw Error(zip.stderr);
+const sha=crypto.createHash('sha256').update(fs.readFileSync(dest)).digest('hex');
+fs.writeFileSync(dest+'.sha256',`${sha}  ${name}\n`);
+const meta={version:catalog.version,download_url:'/downloads/'+name,sha256:sha,bytes:fs.statSync(dest).size,github:'https://github.com/openlxcn/openlx-fliggy-hotel-ops',compatibility:'macOS及Linux运行验证见status.json；Windows尚未实测',file_count:files.length};
+fs.writeFileSync(path.join(root,'public/release.json'),JSON.stringify(meta,null,2)+'\n');
+const sample=JSON.parse(fs.readFileSync(path.join(skill,'references/example-snapshot.json')));fs.writeFileSync(path.join(root,'public/report-demo.html'),renderReport(sample));
+fs.copyFileSync(path.join(skill,'references/status.json'),path.join(root,'public/status.json'));
+console.log(JSON.stringify(meta,null,2));

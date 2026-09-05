@@ -1,0 +1,153 @@
+{
+  "source_repository": "https://github.com/openlxcn/openlx-ctrip-hotel-ops",
+  "source_head": "14f141d5263ebc153aaabcc56a04572145e5571b",
+  "files": [
+    {
+      "source": ".env.example",
+      "sha256": "36352197e893bd5732702d69924b880ac16e3a120124b22d45b5ea864470680d"
+    },
+    {
+      "source": ".gitignore",
+      "sha256": "d4f76385a3d06375e8931787d7d3d74ca29dc50d717db4e7da182a6a50d76a8c"
+    },
+    {
+      "source": "deploy/ctrip.openlx.cn.conf",
+      "sha256": "d82f7014b91b8fa883aa6c610d71fd7e4b3f79bfa3eb7148355459155f670c5a"
+    },
+    {
+      "source": "deploy/ctrip.openlx.cn.http.conf",
+      "sha256": "772368eadc37f0bad49244c4eed5d4f6439c466acb5d29b957fec9ada242fb88"
+    },
+    {
+      "source": "deploy/openlx-ctrip-hotel-ops.service",
+      "sha256": "28f82017890b2f4517e1e131a90613402cccd9281f404d6c6a31ed006f10b387"
+    },
+    {
+      "source": "package-lock.json",
+      "sha256": "3cdb7a47c586d4e3fbd1ff83f732e5ed0a694a75173bcdab311caef308aa7f28"
+    },
+    {
+      "source": "package.json",
+      "sha256": "272ac174c755678c004ae646761f66e6f76ad725e07abbbf90f69749e1783393"
+    },
+    {
+      "source": "public/account.html",
+      "sha256": "ff71a78a798a7f89cf70bb94235a97a70f3908bf53d0ccaea3bc38129a5cd9b1"
+    },
+    {
+      "source": "public/account.js",
+      "sha256": "010f49afe70a46e1b706ae2827f76c06604e40dfa721b5b153a0f6365f6d0a29"
+    },
+    {
+      "source": "public/assets/hotel-operations-hero.png",
+      "sha256": "a88bab8f3aa3f8e15a4ff156f7cb12035e983c901d64959bae36426bbc12de89"
+    },
+    {
+      "source": "public/assets/logo.svg",
+      "sha256": "5ae5f1dca01f024809b174a808ce95417879acd75ae9d2af6b3e731f50364699"
+    },
+    {
+      "source": "public/assets/personal-qr.png",
+      "sha256": "530c09fa1f4b4ab6ab608d6c0d76d43c6a2101dc65c5b7ff3fc308da89ea0c60"
+    },
+    {
+      "source": "public/assets/service-group-qr.png",
+      "sha256": "08036a939ff24136cfb94ee05b75251011f0f295aa75a6f908097a171393b1f8"
+    },
+    {
+      "source": "public/site.css",
+      "sha256": "6d3ba8b86194179ecf978ed07dabbd09ce1a01faed3c21471558a8363e16be91"
+    },
+    {
+      "source": "scripts/build.mjs",
+      "sha256": "8a4627eb887e87005243bd790ea4f11ab554cb1802c62efa98f903226f83cce1"
+    },
+    {
+      "source": "scripts/service-admin.mjs",
+      "sha256": "49b3b88cb59a6a7337ac08b1de420798395e9efd130130632f45b655ffd6e480"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/agents/openai.yaml",
+      "sha256": "8ec1b9f4bebf570bd2ad63220d1c5832eaea4defde3d8316e7a1925c0b7b44a9"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/package-lock.json",
+      "sha256": "7fb4676f78aaae482a2b3977540e9954ae3b6e367e914556b5a298b7610332a9"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/package.json",
+      "sha256": "8bbb26db2c415d1c7b5d2ed21650ec04fa287dc3b8d402859b72b6b4f4d634a0"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/automation.mjs",
+      "sha256": "0395a17ae9d9228db3763ce24afa641368004f52aa96085716b82f11fc3d7e36"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/browser.mjs",
+      "sha256": "cfc0f82279bd4d521519b7ee52667f4aaedeee48676d8a8ea902afdb60132598"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/core.mjs",
+      "sha256": "251d736cfae7a1db7b46f4825174d3c2b780367bc2071114b25a646e650b6b4b"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/daemon.mjs",
+      "sha256": "8425999f73480885b43654ee1a1f9d82caa338b871c2906f538279d0e2094aeb"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/install.mjs",
+      "sha256": "9227548c2bd4bade4445b05458675034401c2a8ff62c83c45503b0cc0604d3bf"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/licensing.mjs",
+      "sha256": "bc617af78ee43125157fb8891e01830ccc6a6eb9ed2016b35f7537712b890098"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/model.mjs",
+      "sha256": "9de5c2f73b6ea5803565e8973e9321f474d738b9ed86a9287909f484418b74ee"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/ops.mjs",
+      "sha256": "860e55d32820011ecc3264ba83d4fce67d2de5c7c596b82eaeae4e8c626f6d1a"
+    },
+    {
+      "source": "skills/openlx-ctrip-hotel-ops/scripts/scheduler.mjs",
+      "sha256": "ed9a9b741dd851dc676b5d54d06c1ba6569f4b9ce306ffacca0632a8077697f9"
+    },
+    {
+      "source": "src/bridge.mjs",
+      "sha256": "d028def202e51108e14d771d42265f25c90024a5a136f9e0090c3bcaf343298a"
+    },
+    {
+      "source": "src/server.mjs",
+      "sha256": "de76faa1298adb292c3d59c0d41918c0e4eb5088f0d2cd7b34647178d4393674"
+    },
+    {
+      "source": "src/store.mjs",
+      "sha256": "6017cd3067912c7ee9662971dcb20d6eef3ef4d773c42b3e9a62f6550044a84e"
+    },
+    {
+      "source": "tests/commerce.test.mjs",
+      "sha256": "40780afc78b33d04197d424dc5c1577fd7cf6c62cb4fae5008f0aa757c3b0c7a"
+    },
+    {
+      "source": "tests/licensing.test.mjs",
+      "sha256": "767b66fbef9d4366582f831b5208d824faa2e0b7b70e400cf1e390770451a586"
+    },
+    {
+      "source": "src/series-sync.mjs",
+      "sha256": "f8db0c6d05069b86fdc94386ae2733c06f5d44142a7240eb6583ecfbfb07cfb8",
+      "purpose": "2026-09-06 series sync contract V1"
+    },
+    {
+      "source": "shared/wx-api/series.cjs",
+      "sha256": "8699f37082d4aecaee1e37069bf72dd8fa8dbbf1ceda15686eac05c00ed01d01",
+      "purpose": "2026-09-06 series sync contract V1"
+    },
+    {
+      "source": "tests/series.test.mjs",
+      "sha256": "15e8271de81eacdaf81b4097c9dd284aec5ae5871f3925190f353fe6867335c3",
+      "purpose": "2026-09-06 series sync contract V1"
+    }
+  ]
+}

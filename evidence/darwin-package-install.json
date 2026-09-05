@@ -1,0 +1,34 @@
+{
+  "scope": "REAL_ZIP_INSTALL",
+  "started_at": "2026-09-05T19:01:58.518Z",
+  "platform": "darwin",
+  "sha256": "c574508c897f3f734be4875cb04e4931aad62b622c772d8876de63eedf2425e9",
+  "runs": [
+    {
+      "command": "python3 -m zipfile -e /Users/quan/Documents/Codex/技能包/openlx-fliggy-hotel-ops/public/downloads/openlx-fliggy-hotel-ops-0.1.0.zip TEMP",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": "/opt/homebrew/Cellar/node/26.0.0/bin/node scripts/install.mjs install --target TEMP/installed",
+      "exit": 0,
+      "output": "\nadded 3 packages in 269ms\n{\n  \"version\": \"0.1.0\",\n  \"node\": \"v26.0.0\",\n  \"platform\": \"darwin\",\n  \"arch\": \"arm64\",\n  \"node_supported\": true,\n  \"sqlite\": \"AVAILABLE\",\n  \"chrome\": true,\n  \"browser_dependency\": \"INSTALLED\",\n  \"account_read\": \"NOT_RUN\",\n  \"account_write\": \"NOT_RUN\",\n  \"public_readback\": \"NOT_RUN\"\n}\n{\"status\":\"INSTALLED\",\"target\":\"TEMP/installed\",\"backup\":null,\"account_verification\":\"NOT_RUN\"}\n"
+    },
+    {
+      "command": "/opt/homebrew/Cellar/node/26.0.0/bin/node scripts/ops.mjs init --workspace TEMP/hotel-work --hotel demo-hotel --name 演示酒店",
+      "exit": 0,
+      "output": "{\n  \"status\": \"INITIALIZED\",\n  \"workspace\": \"TEMP/hotel-work\",\n  \"hotel_id\": \"demo-hotel\"\n}\n"
+    },
+    {
+      "command": "/opt/homebrew/Cellar/node/26.0.0/bin/node scripts/ops.mjs import --workspace TEMP/hotel-work --file TEMP/installed/references/example-snapshot.json",
+      "exit": 0,
+      "output": "{\n  \"status\": \"IMPORTED\",\n  \"source_type\": \"MOCK\",\n  \"observed_at\": \"2026-09-05T18:44:17.233Z\",\n  \"hash\": \"f315f4ee5387000ab4b8f053bf925ea3b1a672a21ee314bff7228b71ca777b23\"\n}\n"
+    },
+    {
+      "command": "/opt/homebrew/Cellar/node/26.0.0/bin/node scripts/ops.mjs report --workspace TEMP/hotel-work",
+      "exit": 0,
+      "output": "{\n  \"status\": \"REPORT_GENERATED\",\n  \"file\": \"TEMP/hotel-work/reports/2026-09-05T19-01-59-164Z.html\",\n  \"plan\": \"FREE\",\n  \"source_type\": \"MOCK\",\n  \"remote_writes\": 0\n}\n"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,47 @@
+{
+  "product": "openlx-fliggy-hotel-ops",
+  "version": "0.1.0",
+  "scope": "INITIAL_IMPLEMENTATION",
+  "local_tests": "PASS_30",
+  "website": "HTTPS_ROUTES_PASS",
+  "live_account_read": "NOT_RUN",
+  "live_account_write": "NOT_RUN",
+  "backend_readback": "NOT_RUN",
+  "public_readback": "NOT_RUN",
+  "payment_transaction": "NOT_RUN",
+  "registration_delivery": "NOT_RUN",
+  "shared_pass_issuance": "NOT_DEPLOYED",
+  "summary": [
+    {
+      "title": "技能与离线报告",
+      "label": "规则、报告及安装验证通过",
+      "state": "LOCAL_RUN_PASS"
+    },
+    {
+      "title": "飞猪真实商家适配",
+      "label": "待账号核验",
+      "state": "NOT_RUN"
+    },
+    {
+      "title": "会员通票",
+      "label": "预留统一授权，尚未开售",
+      "state": "NOT_DEPLOYED"
+    }
+  ],
+  "browser_qa": "PASS_DESKTOP_MOBILE",
+  "skill_validation": "PASS",
+  "macos_install": "PASS",
+  "smtp_connection_auth": "PASS",
+  "shared_identity": "ROUTES_IMPLEMENTED_REAL_LOGIN_NOT_RUN",
+  "payment_config": {
+    "alipay": true,
+    "wechat": true
+  },
+  "series_sync": "PRODUCTION_REGISTERED_EMPTY_STREAM_ACK_0",
+  "shared_pass_consumer": "LOCAL_SIGNED_SCOPE_TESTS_PASS",
+  "linux_tests": "PASS_30",
+  "series_business_records": 0,
+  "cross_product_real_user_login": "NOT_RUN",
+  "linux_install": "PASS",
+  "visual_theme": "FLIGGY_YELLOW_CREAM_CHARCOAL"
+}

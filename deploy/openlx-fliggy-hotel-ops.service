@@ -1,0 +1,17 @@
+[Unit]
+Description=OpenLX Fliggy Hotel Operations
+After=network.target wx-api.service
+
+[Service]
+Type=simple
+WorkingDirectory=/www/wwwroot/openlx-fliggy-hotel-ops
+ExecStart=/usr/bin/node src/server.mjs
+EnvironmentFile=/www/wwwroot/openlx-fliggy-hotel-ops/.env.production
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

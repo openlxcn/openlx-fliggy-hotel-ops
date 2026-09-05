@@ -1,0 +1,30 @@
+{
+  "hotel_id": "demo-hotel",
+  "account_id": "demo-account",
+  "seller_id": "demo-seller",
+  "room_ids": [
+    "garden"
+  ],
+  "plan_ids": [
+    "base"
+  ],
+  "dates": [
+    "2026-10-01"
+  ],
+  "price_type": "SUPPLY",
+  "conditions_hashes": [
+    "demo-base-no-breakfast"
+  ],
+  "update_semantics": "INCREMENTAL",
+  "target_fen": 29000,
+  "floor_fen": 26000,
+  "ceiling_fen": 36000,
+  "max_change_bps": 1000,
+  "daily_change_bps": 1500,
+  "daily_count": 2,
+  "cooldown_minutes": 60,
+  "max_age_minutes": 30,
+  "valid_until": "2026-10-01T00:00:00+08:00",
+  "mode": "CONFIRMED",
+  "strategy": "FIXED"
+}

@@ -1,0 +1,42 @@
+
+> openlx-fliggy-hotel-ops@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ all prices are exact and no trial or voucher package can create order (7.489542ms)
+✔ calendar months clamp correctly at month end (0.079125ms)
+✔ payment exact amount, merchant method, idempotency and renewal preserve entitlement (4.037ms)
+✔ service ticket is not delivered and annual persona requires annual plan (5.622209ms)
+✔ HTTP website isolates session, requires CSRF and exposes no test-payment bypass (50.36525ms)
+✔ registered device refresh is revocable and concurrent writers cannot both hold a lease (6.666875ms)
+✔ series overview is session protected and rejects mismatched central user identity (11.710542ms)
+✔ calendar plans use full identity and reject duplicate or missing price types (2.077917ms)
+✔ supply price cannot fulfill a retail request or overwrite another seller/rate plan (0.710459ms)
+✔ price limits include cumulative changes, stale reads, valid numeric bounds and automatic entitlement (0.377417ms)
+✔ a historical actual settlement cannot stand in for a candidate price contribution (0.3285ms)
+✔ two-night packages preserve unreserved obligations and partial refunds (0.157333ms)
+✔ net settlement never double counts commission and credits stay valid without prepayment (0.309459ms)
+✔ five stars containing a complaint are never classified for automatic reply (0.631ms)
+✔ free report includes package/settlement risks and paid report only removes promotion (2.557208ms)
+✔ generic order writes and uncertain inventory capacity cannot create eligible actions (0.216833ms)
+✔ import cannot promote user supplied LIVE labels into executable browser evidence (7.435292ms)
+✔ approved export action still cannot write without LIVE source and real mapping (3.959ms)
+✔ signed device enrollment rejects swapping another valid token (0.828334ms)
+✔ heartbeat and explicit assertion share one renewal and cannot mask its failure (0.434541ms)
+✔ a renewal response for another hotel invalidates the lease before the caller can write (0.093667ms)
+✔ central pass scopes user, product and centrally attested property binding (2.7835ms)
+✔ forged, stale, revoked, future or unbounded membership grants fail closed (1.524083ms)
+✔ signed shared pass is consumed by normal license issuance without creating a purchase (6.949916ms)
+✔ a central signed revocation takes effect and an earlier signed active grant cannot revive it (4.966916ms)
+✔ series signing rejects wrong product, changed body and expired request (1.247667ms)
+✔ transactional outbox retains committed payment and excludes tokens and private ticket content (10.022916ms)
+✔ uncertain network result replays exact durable batch, then catches later edits and deletions (9.408417ms)
+✔ series validation rejects leaked credentials, foreign product and invalid money (0.15025ms)
+✔ a delayed duplicate acknowledgement cannot rewind a newer producer acknowledgement (6.326292ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 273.349042

@@ -1,0 +1,173 @@
+{
+  "name": "OpenLX 飞猪酒店运营助手",
+  "id": "openlx-fliggy-hotel-ops",
+  "website": "https://feizhu.openlx.cn",
+  "version": "0.1.0",
+  "features": [
+    {
+      "id": "ADV-01",
+      "public_title": "专属Chrome，持续复用登录状态",
+      "promise": "独立配置、登录状态复用、酒店/店铺身份核对、人工接管、失效续登。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-02",
+      "public_title": "全店经营体检，问题分轻重",
+      "promise": "检查资料、可售性、价态、订单、套餐、活动、点评和可获取的经营数据，提供证据和优先动作。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-03",
+      "public_title": "酒店匹配、资料与图片优化",
+      "promise": "检查名称地址、酒店及房型匹配、设施政策、图片和真实卖点；避免重复建店和错误房型。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-04",
+      "public_title": "多价格计划与套餐算账",
+      "promise": "分开管理含早/不含早、退改、连住、会员等实际价格计划，以及套餐权益与结算成本。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-05",
+      "public_title": "日历房与预约套餐的库存管理",
+      "promise": "区分日期库存、套餐可售份额、已预约承诺、待预约权益；可靠库存支持下落实授权调整。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-06",
+      "public_title": "有底线、可解释的自动调价",
+      "promise": "区分供货底价与零售价，标准版基础规则，至尊版多因素策略，执行前重读、执行后核验。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-07",
+      "public_title": "可比同行与同酒店销售报价观察",
+      "promise": "同条件比较竞品；可识别时区分自有与其他销售主体报价，不能越权改动别人的报价。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-08",
+      "public_title": "节日、需求与活动机会预警",
+      "promise": "真实事件、报名资格、时间和成本核对；不是见活动就报名。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-09",
+      "public_title": "订单接待、预约与结算核对",
+      "promise": "区分预订、预约、入住、退房、退款和结算；生成可执行任务，核验信用住等已开通业务。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-10",
+      "public_title": "好评自动回复，差评确认发布",
+      "promise": "免费自动发布真实正向评价的商家回复；差评/混合评价待确认，保留事实核验与整改追踪。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-11",
+      "public_title": "店铺转化、素材与会员活动优化",
+      "promise": "素材文件夹到真实商品展示、咨询FAQ、套餐与已开通会员/活动经营；内容入口按权限核验。",
+      "minimum_acceptance": []
+    },
+    {
+      "id": "ADV-12",
+      "public_title": "HTML报告与持续经营复盘",
+      "promise": "问题、证据、动作、状态、收益与履约结果、历史对比、下一步任务。",
+      "minimum_acceptance": []
+    }
+  ],
+  "plans": {
+    "FREE": {
+      "display_name": "免费版",
+      "monthly_fen": 0,
+      "quarterly_fen": 0,
+      "annual_fen": 0,
+      "report_branding": "OPENLX_FAJIANG_VISIBLE_FOOTER",
+      "competitor_tracking": "MANUAL",
+      "confirmed_manual_operations": true,
+      "basic_automatic_pricing": false,
+      "advanced_automatic_pricing": false,
+      "content_autopublish": false,
+      "human_support": "SELF_SERVICE"
+    },
+    "STANDARD": {
+      "display_name": "标准版",
+      "monthly_fen": 1490,
+      "quarterly_fen": 2990,
+      "annual_fen": 7990,
+      "report_branding": "NO_PROMOTIONAL_BRANDING",
+      "basic_automatic_pricing": true,
+      "advanced_automatic_pricing": false,
+      "content_autopublish": false,
+      "human_support": "PRODUCT_ISSUE_TICKETS"
+    },
+    "SUPREME": {
+      "display_name": "至尊版",
+      "monthly_fen": 4990,
+      "quarterly_fen": 9990,
+      "annual_fen": 29990,
+      "report_branding": "NO_PROMOTIONAL_BRANDING",
+      "basic_automatic_pricing": true,
+      "advanced_automatic_pricing": true,
+      "automatic_inventory_requires_authoritative_source": true,
+      "content_autopublish": false,
+      "content_limit_note": "素材用于酒店详情、套餐说明和FAQ；发布按真实商家入口适配，不承诺游记自动发布",
+      "initial_custom_service": {
+        "strategy_card": 1,
+        "text_revision": 1,
+        "redemption": "首次激活单店权益后首12个月一次；月/季续费不重复重置。"
+      },
+      "annual_persona_distillation": {
+        "per_paid_service_year": 1,
+        "revisions": 1,
+        "deliverables": [
+          "酒店定位与客群",
+          "真实卖点与语言风格",
+          "价格计划及套餐建议",
+          "30天动作",
+          "可导入配置"
+        ]
+      }
+    }
+  },
+  "defaults": {
+    "FREE": {
+      "compset_hotels": 5,
+      "competitor_date_samples_per_scan": 3,
+      "own_inventory_audit_horizon_days": 90
+    },
+    "STANDARD": {
+      "compset_hotels": 10,
+      "competitor_tracking_horizon_days": 30,
+      "competitor_date_samples_per_scan": 7,
+      "competitor_scan_windows_per_day": 2,
+      "own_inventory_audit_horizon_days": 90
+    },
+    "SUPREME": {
+      "compset_hotels": 20,
+      "competitor_tracking_horizon_days": 90,
+      "competitor_date_samples_per_scan": 7,
+      "competitor_scan_windows_per_day": 4,
+      "own_inventory_audit_horizon_days": 90,
+      "content_daily_candidate_limit": 1,
+      "content_monthly_candidate_limit": 31,
+      "remote_minutes": 30
+    }
+  },
+  "commercial_modes": [
+    "FREE",
+    "PAID"
+  ],
+  "pricing_status": "PROPOSED_PENDING_CONFIRMATION",
+  "trial": false,
+  "coupons": false,
+  "vouchers": false,
+  "membership": {
+    "identity_origin": "https://wx.openlx.cn",
+    "shared_account": true,
+    "pass_sales": false,
+    "pass_contract": "OPENLX_SKILL_PASS_V1",
+    "scope": "explicit_products_and_property"
+  }
+}

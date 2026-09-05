@@ -1,0 +1,25 @@
+{
+  "scope": "BROWSER",
+  "origin": "https://feizhu.openlx.cn",
+  "tested_at": "2026-09-05T19:03:20.374Z",
+  "checks": [
+    {
+      "viewport": "desktop",
+      "feature_count": 12,
+      "annual_price": 79.9,
+      "overflow": false,
+      "login_form": true,
+      "sales_disabled": true,
+      "page_errors": []
+    },
+    {
+      "viewport": "mobile",
+      "feature_count": 12,
+      "annual_price": 79.9,
+      "overflow": false,
+      "login_form": true,
+      "sales_disabled": true,
+      "page_errors": []
+    }
+  ]
+}

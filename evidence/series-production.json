@@ -1,0 +1,13 @@
+{
+  "product_id": "openlx-fliggy-hotel-ops",
+  "transport": "SIGNED_OUTBOX_TO_WX_MYSQL",
+  "stream_id": "027d1084-e041-4975-9807-c07a0ec20832",
+  "local_ack": 0,
+  "central_revision": 0,
+  "stream_match": true,
+  "pending": 0,
+  "business_records": 0,
+  "actual_user_overview": "NOT_RUN",
+  "public_unauthenticated_read": "401",
+  "central_source_readback": "PASS"
+}

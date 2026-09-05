@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+runtime/
+profiles/
+*.sqlite*
+*.pem
+*.key
+*.log
+.DS_Store
+.playwright-cli/
+output/
+dist/
+public/downloads/
+evidence/private/

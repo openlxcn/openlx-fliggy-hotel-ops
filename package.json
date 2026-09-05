@@ -1,0 +1,22 @@
+{
+  "name": "openlx-fliggy-hotel-ops",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "doctor": "node skills/openlx-fliggy-hotel-ops/scripts/ops.mjs doctor"
+  },
+  "dependencies": {
+    "express": "4.22.2",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

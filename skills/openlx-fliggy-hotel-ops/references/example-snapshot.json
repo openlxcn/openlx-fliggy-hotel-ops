@@ -1,0 +1,158 @@
+{
+  "hotel": {
+    "id": "demo-hotel",
+    "name": "湖畔小院（演示酒店）",
+    "address": "示意地址，非真实物业",
+    "destination": "示意目的地",
+    "description": "经营报告展示用酒店，不构成实际设施宣传。"
+  },
+  "identity": {
+    "hotel_id": "demo-hotel",
+    "account_id": "demo-account",
+    "merchant_id": "demo-merchant",
+    "seller_id": "demo-seller"
+  },
+  "source": {
+    "type": "MOCK",
+    "account_id": "demo-account",
+    "reference": "OpenLX脱敏演示样例；非真实后台读取"
+  },
+  "observed_at": "2026-09-05T18:44:17.233Z",
+  "period": "演示观察期",
+  "price_authority": "FLIGGY",
+  "inventory_authority": null,
+  "rooms": [
+    {
+      "id": "garden",
+      "name": "庭院大床房",
+      "capacity": 2,
+      "breakfast": "不含早",
+      "cancellation": "示意：入住前一天可取消"
+    }
+  ],
+  "rates": [
+    {
+      "seller_id": "demo-seller",
+      "room_id": "garden",
+      "plan_id": "base",
+      "date": "2026-10-01",
+      "price_type": "SUPPLY",
+      "price_fen": 28000,
+      "currency": "CNY",
+      "floor_fen": 26000,
+      "editable": true,
+      "writer": "FLIGGY",
+      "conditions_hash": "demo-base-no-breakfast",
+      "source_reference": "演示房价"
+    }
+  ],
+  "inventory": [
+    {
+      "room_id": "garden",
+      "date": "2026-10-01",
+      "available": 3
+    }
+  ],
+  "packages": [
+    {
+      "id": "two-nights",
+      "name": "两晚住宿套餐（演示）",
+      "sold_units": 100,
+      "nights_per_unit": 2,
+      "refunded_rights_nights": 0,
+      "confirmed_room_nights": 80,
+      "fulfilled_room_nights": 20,
+      "capacity_verified": false,
+      "valid_until": "2026-12-31",
+      "excluded_dates": [
+        "2026-10-01"
+      ],
+      "surcharge_terms": "以售出商品约定为准"
+    }
+  ],
+  "orders": [
+    {
+      "id": "demo-credit-order",
+      "status": "BOOKED",
+      "payment_mode": "CREDIT_STAY",
+      "prepaid": false,
+      "credit_validated": true,
+      "effective_room_nights": 2,
+      "fulfilled_room_nights": 0,
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "room_id": "garden",
+      "rooms": 1
+    },
+    {
+      "id": "demo-stayed-order",
+      "status": "CHECKED_OUT",
+      "payment_mode": "PREPAID",
+      "effective_room_nights": 2,
+      "fulfilled_room_nights": 2,
+      "room_id": "garden",
+      "rooms": 1
+    }
+  ],
+  "settlements": [
+    {
+      "id": "settlement-example",
+      "net_settlement_fen": 28000,
+      "variable_cost_fen": 8000,
+      "commission_fen": 2000,
+      "merchant_discount_fen": 1000,
+      "note": "净结算已扣相关费用，佣金和商家优惠不重复扣除"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "rating": 5,
+      "text": "干净整洁，服务热情，很满意！",
+      "replied": false
+    },
+    {
+      "id": "r2",
+      "rating": 5,
+      "text": "位置很好，但是晚上有噪音，希望改善。",
+      "replied": false
+    }
+  ],
+  "promotions": null,
+  "competitors": [
+    {
+      "hotel_name": "同条件同行（演示）",
+      "status": "NOT_OBSERVED",
+      "price_fen": null,
+      "checkin": "2026-10-01"
+    }
+  ],
+  "events": null,
+  "facts": [
+    {
+      "id": "f1",
+      "text": "本示例使用庭院大床房作为数据字段演示。",
+      "verified": true,
+      "source_reference": "演示说明"
+    }
+  ],
+  "content": null,
+  "memberships": [],
+  "rank_observations": [
+    {
+      "query": "示意目的地 民宿",
+      "location": "示意城市",
+      "checkin": "2026-10-01",
+      "checkout": "2026-10-02",
+      "adults": 2,
+      "sort": "综合",
+      "filters": [],
+      "account_state": "匿名观察示例",
+      "observed_at": "2026-09-05T18:44:17.233Z",
+      "depth": 20,
+      "channel": "NATURAL",
+      "position": null,
+      "status": "NOT_SEEN_WITHIN_DEPTH"
+    }
+  ]
+}

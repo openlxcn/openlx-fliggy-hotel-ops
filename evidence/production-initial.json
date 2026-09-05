@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-09-05T18:50:20.179Z",
+  "routes": [
+    {
+      "route": "/health",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/account",
+      "status": 200
+    },
+    {
+      "route": "/docs",
+      "status": 200
+    },
+    {
+      "route": "/reports",
+      "status": 200
+    },
+    {
+      "route": "/api/public/config",
+      "status": 200
+    }
+  ],
+  "config": {
+    "product": "openlx-fliggy-hotel-ops",
+    "sales_enabled": false,
+    "identity": "OPENLX_SHARED",
+    "payment": {
+      "alipay": true,
+      "wechat": true
+    }
+  },
+  "qr": [
+    {
+      "asset": "service-group-qr.png",
+      "match": true,
+      "sha256": "08036a939ff24136cfb94ee05b75251011f0f295aa75a6f908097a171393b1f8"
+    },
+    {
+      "asset": "personal-qr.png",
+      "match": true,
+      "sha256": "530c09fa1f4b4ab6ab608d6c0d76d43c6a2101dc65c5b7ff3fc308da89ea0c60"
+    }
+  ]
+}

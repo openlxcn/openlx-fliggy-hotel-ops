@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "download_url": "/downloads/openlx-fliggy-hotel-ops-0.1.0.zip",
+  "sha256": "c574508c897f3f734be4875cb04e4931aad62b622c772d8876de63eedf2425e9",
+  "bytes": 49709,
+  "github": "https://github.com/openlxcn/openlx-fliggy-hotel-ops",
+  "compatibility": "macOS及Linux运行验证见status.json；Windows尚未实测",
+  "file_count": 21
+}

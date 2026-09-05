@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenLX 飞猪酒店运营助手"
+  short_description: "飞猪经营体检、价格计划与套餐履约分析，生成完整HTML报告。"
+  default_prompt: "使用 $openlx-fliggy-hotel-ops 为我的酒店做一次经营体检，先核对酒店与数据来源，再生成完整报告和优先动作。"

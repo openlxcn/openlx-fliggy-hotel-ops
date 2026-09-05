@@ -1,0 +1,34 @@
+{
+  "scope": "REAL_ZIP_INSTALL",
+  "started_at": "2026-09-05T19:02:15.381Z",
+  "platform": "linux",
+  "sha256": "c574508c897f3f734be4875cb04e4931aad62b622c772d8876de63eedf2425e9",
+  "runs": [
+    {
+      "command": "python3 -m zipfile -e /www/wwwroot/openlx-fliggy-hotel-ops/public/downloads/openlx-fliggy-hotel-ops-0.1.0.zip TEMP",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": "/www/server/nodejs/v22.20.0/bin/node scripts/install.mjs install --target TEMP/installed",
+      "exit": 0,
+      "output": "\nadded 2 packages in 1s\n{\n  \"version\": \"0.1.0\",\n  \"node\": \"v22.20.0\",\n  \"platform\": \"linux\",\n  \"arch\": \"x64\",\n  \"node_supported\": true,\n  \"sqlite\": \"AVAILABLE\",\n  \"chrome\": \"需本机核验\",\n  \"browser_dependency\": \"INSTALLED\",\n  \"account_read\": \"NOT_RUN\",\n  \"account_write\": \"NOT_RUN\",\n  \"public_readback\": \"NOT_RUN\"\n}\n{\"status\":\"INSTALLED\",\"target\":\"TEMP/installed\",\"backup\":null,\"account_verification\":\"NOT_RUN\"}\n(node:2800341) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "command": "/www/server/nodejs/v22.20.0/bin/node scripts/ops.mjs init --workspace TEMP/hotel-work --hotel demo-hotel --name 演示酒店",
+      "exit": 0,
+      "output": "{\n  \"status\": \"INITIALIZED\",\n  \"workspace\": \"TEMP/hotel-work\",\n  \"hotel_id\": \"demo-hotel\"\n}\n(node:2800350) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "command": "/www/server/nodejs/v22.20.0/bin/node scripts/ops.mjs import --workspace TEMP/hotel-work --file TEMP/installed/references/example-snapshot.json",
+      "exit": 0,
+      "output": "{\n  \"status\": \"IMPORTED\",\n  \"source_type\": \"MOCK\",\n  \"observed_at\": \"2026-09-05T18:44:17.233Z\",\n  \"hash\": \"f315f4ee5387000ab4b8f053bf925ea3b1a672a21ee314bff7228b71ca777b23\"\n}\n(node:2800357) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "command": "/www/server/nodejs/v22.20.0/bin/node scripts/ops.mjs report --workspace TEMP/hotel-work",
+      "exit": 0,
+      "output": "{\n  \"status\": \"REPORT_GENERATED\",\n  \"file\": \"TEMP/hotel-work/reports/2026-09-05T19-02-17-151Z.html\",\n  \"plan\": \"FREE\",\n  \"source_type\": \"MOCK\",\n  \"remote_writes\": 0\n}\n(node:2800364) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  ],
+  "status": "PASS"
+}

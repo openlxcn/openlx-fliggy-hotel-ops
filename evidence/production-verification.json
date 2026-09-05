@@ -1,0 +1,93 @@
+{
+  "scope": "PRODUCTION_SAME_VERSION_READBACK",
+  "checked_at": "2026-09-05T19:03:05.046Z",
+  "origin": "https://feizhu.openlx.cn",
+  "version": "0.1.0",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/account",
+      "status": 200
+    },
+    {
+      "path": "/docs",
+      "status": 200
+    },
+    {
+      "path": "/reports",
+      "status": 200
+    },
+    {
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "path": "/api/public/config",
+      "status": 200
+    },
+    {
+      "path": "/release.json",
+      "status": 200
+    },
+    {
+      "path": "/status.json",
+      "status": 200
+    }
+  ],
+  "files": [
+    {
+      "path": "/assets/hotel-operations-fliggy-hero.png",
+      "sha256": "0f56fa113c6aa137eea37457dcb373e069e66dcafdaa166a67aeab981ed93bf9",
+      "match": true
+    },
+    {
+      "path": "/assets/operation-flow.svg",
+      "sha256": "d76f2fd9742745c63caa6f7581e0ef656b7399dbcc1e6396d92e7fc5e8551690",
+      "match": true
+    },
+    {
+      "path": "/site.css",
+      "sha256": "6a1cb5b0c216c951d3c7daa00bc296159ab43cfa4df933a2ee99326f821a90c2",
+      "match": true
+    },
+    {
+      "path": "/assets/service-group-qr.png",
+      "sha256": "08036a939ff24136cfb94ee05b75251011f0f295aa75a6f908097a171393b1f8",
+      "match": true
+    },
+    {
+      "path": "/assets/personal-qr.png",
+      "sha256": "530c09fa1f4b4ab6ab608d6c0d76d43c6a2101dc65c5b7ff3fc308da89ea0c60",
+      "match": true
+    },
+    {
+      "path": "/downloads/openlx-fliggy-hotel-ops-0.1.0.zip",
+      "sha256": "c574508c897f3f734be4875cb04e4931aad62b622c772d8876de63eedf2425e9",
+      "match": true
+    },
+    {
+      "path": "/downloads/openlx-fliggy-hotel-ops-0.1.0.zip.sha256",
+      "sha256": "4be57254cecfb39edb031252ab03ff15f65cb81a618e9854e5aed52904689f93",
+      "match": true
+    }
+  ],
+  "config": {
+    "identity": "OPENLX_SHARED",
+    "sales_enabled": false,
+    "payment": {
+      "alipay": true,
+      "wechat": true
+    }
+  },
+  "qr_source_match": true,
+  "package_sha256": "c574508c897f3f734be4875cb04e4931aad62b622c772d8876de63eedf2425e9",
+  "series_unauthenticated": 401,
+  "shared_health": 200,
+  "real_payment": "NOT_RUN",
+  "email_delivery": "NOT_RUN",
+  "live_hotel": "NOT_RUN",
+  "status": "PASS"
+}

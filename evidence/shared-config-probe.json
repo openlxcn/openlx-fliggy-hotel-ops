@@ -1,0 +1,11 @@
+{
+  "tested_at": "2026-09-05T18:50:48.818Z",
+  "identity_origin": "http://127.0.0.1:1978",
+  "smtp_connection_auth": "PASS",
+  "smtp_messages_sent": 0,
+  "payment": {
+    "alipay": true,
+    "wechat": true
+  },
+  "payment_transactions": 0
+}
