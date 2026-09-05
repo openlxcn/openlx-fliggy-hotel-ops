@@ -4,6 +4,8 @@
 
 [产品官网](https://feizhu.openlx.cn) · [完整报告示例](https://feizhu.openlx.cn/reports) · [安装包与版本](https://github.com/openlxcn/openlx-fliggy-hotel-ops/releases) · [会员中心](https://feizhu.openlx.cn/account)
 
+[多平台安装与发布状态](docs/PLATFORM-PUBLISHING.md) · [魔搭公开技能](https://modelscope.cn/skills/openlx/openlx-fliggy-hotel-ops)
+
 ![OpenLX酒店运营自有概念视觉](public/assets/hotel-operations-fliggy-hero.png)
 
 v0.1.0 提供可安装技能、导入体检、离线HTML报告、飞猪专用规则、账号适配执行器与官网会员服务。**真实飞猪商家账号的读取、改价和点评发布尚待现场核验**；当前价格是框架建议，商业收款未开放。详见[分项状态](skills/openlx-fliggy-hotel-ops/references/status.json)。

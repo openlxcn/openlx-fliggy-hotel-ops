@@ -1,0 +1,10 @@
+{
+  "name": "openlx-fliggy-hotel-ops",
+  "displayName": "OpenLX 飞猪酒店运营助手",
+  "version": "0.1.0",
+  "description": "OpenLX 飞猪酒店运营助手：导入经营数据生成完整离线HTML报告，分别核对供货价、零售价、套餐预约与结算。免费长期可用，收费尚未开放，真实商家后台动作需按账号核验。",
+  "author": { "name": "OpenLX" },
+  "homepage": "https://feizhu.openlx.cn",
+  "repository": "https://github.com/openlxcn/openlx-fliggy-hotel-ops",
+  "keywords": ["fliggy", "hotel", "飞猪", "酒店运营", "openlx"]
+}
